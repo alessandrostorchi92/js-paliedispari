@@ -3,7 +3,8 @@
 // Procedimento: Chiedi all'utente di scrivere una parola tramite input
 // 1) Aggiungi alla costante .value per poter leggere quello che l’utente ha inserito nel input.
 // 2) Utilizza la funzione addEventListenerper far partire l'evento a seguito del click dell'utente sulla cta
-// 3) Attraverso .split, .reverse, .join
+// 3) Utilizzo il metodo delle funzioni: .split, .reverse, .join per confrontare la parola inserita dall'utente con quella invertita grazie a questo metodo
+// 4) Attraverso la condizione if-else stabilisco se la parola è pallindroma oppure no 
 
 
 const btnFind = document.querySelector(".btn_find");

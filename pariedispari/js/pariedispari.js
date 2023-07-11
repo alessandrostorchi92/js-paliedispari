@@ -15,8 +15,8 @@
 
 // Chiedo all'utente di scegliere pari o dispari e poi di inserire un numero compreso tra 1 e 5 
 
-const evenOrOdd = prompt ("Scegli pari o dispari");
-const chosenUserNumber = parseInt (prompt ("Inserisci un numero compreso tra 1 e 5"));
+const evenOrOdd = prompt("Scegli pari o dispari");
+const chosenUserNumber = parseInt(prompt("Inserisci un numero compreso tra 1 e 5"));
 
 // Controllo input(prompt) utente
 if (isNaN(chosenUserNumber) || chosenUserNumber < 1 || chosenUserNumber > 5) {
@@ -33,16 +33,17 @@ computerRandomNumber(); // Invoco la funzione che genera un numero casuale al co
  * @param {number}
  */
 
-function computerRandomNumber () {
-const cpuNumber = Math.floor(Math.random() * 5) + 1;
-console.log(`Il numero random compreso tra 1 e 5 scelto dal computer è : ${cpuNumber}`);
-return cpuNumber;
+function computerRandomNumber() {
+    const cpuNumber = Math.floor(Math.random() * 5) + 1;
+    console.log(`Il numero random compreso tra 1 e 5 scelto dal computer è : ${cpuNumber}`);
+    return cpuNumber;
 }
 
 // Utilizzo la funzione somma per sommare il numero scelto dall'utente e dal cpu
 
 
-sumNumbers(chosenUserNumber, cpuNumber); // Invoco la funzione che genera la somma dei due numeri
+let sumResult = sumNumbers(chosenUserNumber, computerRandomNumber()); // Invoco la funzione che genera la somma dei due numeri 
+
 
 /**
  * @param {number} chosenUserNumber 
@@ -50,7 +51,7 @@ sumNumbers(chosenUserNumber, cpuNumber); // Invoco la funzione che genera la som
  * @returns {number}
  */
 
-function sumNumbers (chosenUserNumber, cpuNumber) {
+function sumNumbers(chosenUserNumber, cpuNumber) {
     const sumResult = chosenUserNumber + cpuNumber;
     console.log(`La somma tra il numero scelto dall'utente e quello scelto dal cpu è : ${sumResult}`);
     return sumResult;
@@ -68,7 +69,7 @@ if (sumResult % 2 === 0) {
 
 if (sumResult = "pari" && evenOrOdd === "pari") {
     console.log("Hai vinto!");
-} else if (sumResult = "dispari" && evenOrOdd === "dispari"){
+} else if (sumResult = "dispari" && evenOrOdd === "dispari") {
     console.log("Hai vinto!");
 } else {
     console.log("Hai perso");
